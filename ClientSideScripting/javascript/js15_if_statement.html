@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<head>
+	<title>IF statement</title>
+
+	<script>
+	var mark_arun= new Array(96,83,50), mark_midhun= new Array(99,93,50),totl1,totl2;
+	total_arun=mark_arun[0]+mark_arun[1]+mark_arun[2];
+	
+	total_midhun=mark_midhun[0]+mark_midhun[1]+mark_midhun[2];
+
+	document.write("marks for : Arun is "+mark_arun+"<br>total is "+total_arun);
+	document.write("<br>marks for : Midhun is "+mark_midhun+"<br>total is "+total_midhun);
+	if(total_arun>total_midhun)
+	{	
+
+		var  diffrnc=total_arun-total_midhun;
+		alert("Arun has marks got "+diffrnc+" more than Midhun");
+	}
+	else{
+			var  diffrnc=total_midhun-total_arun;
+			alert("Midhun has got "+diffrnc+" marks more than Arun");
+	}
+
+	</script>
+
+</head>
+
+<body>
+
+</body>
+</html>
