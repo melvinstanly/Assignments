@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<head>
+	<title>Form values</title>
+
+	<script type="text/javascript">
+
+	function write_name()
+	{
+		var name=document.getElementById("txt_name").value;	
+		alert(name);
+	}
+	
+
+	</script>
+</head>
+
+<body>
+	<form name="form_reg" action="" method="get">
+	
+	What is your name : <input type="text" id="txt_name"/><br>
+		
+	<input type="button" value="Done" id="button" onclick="write_name();"/>
+</form>
+</body>
+</html>

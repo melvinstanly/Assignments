@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<head>
+	<title>objects, methods and properties</title>
+
+	<script type="text/javascript">
+
+	var image_tracker='n1';
+	function change()
+	{
+		var image=document.getElementById("nature");	
+		if(image_tracker=='n1')
+		{
+			image.src="images/nature2.jpg";
+			image_tracker='n2';
+		}
+		else
+		{
+			image.src="images/nature1.jpg";
+			image_tracker='n1';
+
+		}
+	}
+	var timer = setInterval("change()",2000);
+
+	</script>
+</head>
+
+<body>
+<img src="images\nature1.jpg" alt="flower" id="nature" onclick="clearInterval(timer);">
+</body>
+</html>
