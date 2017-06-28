@@ -1,0 +1,26 @@
+<html>
+<head>
+	<title>Assignment 12 JS Variable Scope</title>
+	<script type="text/javascript">
+
+	var g_msg="apple inside function";
+
+	function global(){
+		var l_msg="apple outside function";
+		document.write("<h2>Global</h2>");
+		document.write(g_msg+"<br><br>"+l_msg+"<br><br>");
+	}
+
+	function local(){
+		document.write("<h2>Local</h2>"+g_msg);
+	}
+
+	global();
+	local();
+
+</script>
+</head>
+<body>
+
+</body>
+</html>
